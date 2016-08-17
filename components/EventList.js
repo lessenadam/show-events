@@ -2,7 +2,7 @@ import React from 'react';
 import EventEntry from './EventEntry';
 
 const EventList = ({ events }) => (
-  <div className="container row">
+  <div className="container">
     {events.map((event, index) => <EventEntry key={index} event={event} /> )}
   </div>
 );

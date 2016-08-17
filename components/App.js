@@ -31,10 +31,10 @@ class App extends Component {
 
   getUpdatedEvents() {
     var context = this;
-    console.log('this in getUpdatedEvents', this);
     axios(url, { headers: { 'Authorization': authHeader } })
     .then(function (response) {
         const eventList = response.data.events;
+        console.log('reponse.data? ', eventList);
         context.setState({eventList});
       })
     .catch(function (error) {

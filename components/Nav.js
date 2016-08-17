@@ -10,7 +10,7 @@ const Nav = ({ clickHandler }) => (
         height="60px"
         width="60px"
       />
-      <ul id="nav-mobile" className="refresh-container right hide-on-med-and-down">
+      <ul id="nav-mobile" className="refresh-container right">
         <li><a onClick={clickHandler} className="waves-effect waves-light btn-flat">Refresh now</a></li>
       </ul>
     </div>

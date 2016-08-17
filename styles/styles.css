@@ -14,7 +14,7 @@ html, body
 
 .logo 
 {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .refresh-container 
@@ -29,4 +29,13 @@ html, body
 
 .container {
   margin-top: 100px;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.severity {
+  font-weight: 500;
+  font-size: 1.5em;
 }
