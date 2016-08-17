@@ -1,0 +1,28 @@
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app, .wrapper
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+.logo 
+{
+  margin-left: 50px;
+}
+
+.refresh-container 
+{
+  margin-right: 100px;
+}
+
+.btn-flat {
+  font-weight: bold;
+  border: 2px solid gray;
+}
