@@ -7,13 +7,10 @@ const EventEntry = ({ event, index }) => (
   <div className="card grey lighten-1 row">
     <div className="card-content white-text">
       <div className="col s9 row">
-        <div className="col s7">
+        <div className="col s12">
           <div className="info-container-left">
             <span className="info-title">{event.name}</span>
-          </div>
-        </div>
-        <div className="col s5">
-          <div className="info-container-right">
+            <br/>
             <span className="date">{`${timeConverter(event.timestamp)}`}</span>
           </div>
         </div>

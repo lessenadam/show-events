@@ -21,7 +21,7 @@ class App extends Component {
 
   componentDidMount() {
     this.getUpdatedEvents();
-    // this.interval = setInterval(this.getUpdatedEvents, 30000);
+    this.interval = setInterval(this.getUpdatedEvents, 30000);
   }
 
   componentWillUnmount() {
@@ -34,7 +34,6 @@ class App extends Component {
     axios(url, { headers: { 'Authorization': authHeader } })
     .then(function (response) {
         const eventList = response.data.events;
-        console.log('reponse.data? ', eventList);
         context.setState({eventList});
       })
     .catch(function (error) {
@@ -43,7 +42,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('eventlist?', this.state.eventList.length > 0);
     return (
       <div className="wrapper grey lighten-4">
           <Nav clickHandler={this.getUpdatedEvents}/>
@@ -53,8 +51,5 @@ class App extends Component {
   }
 }
 
-// App.defaultProps = {
-  
-// };
 
 export default App;
