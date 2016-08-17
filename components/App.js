@@ -45,9 +45,9 @@ class App extends Component {
   render() {
     console.log('eventlist?', this.state.eventList.length > 0);
     return (
-      <div>
-        <Nav clickHandler={this.getUpdatedEvents}/>
-        <EventList events={this.state.eventList}/>
+      <div className="wrapper grey lighten-4">
+          <Nav clickHandler={this.getUpdatedEvents}/>
+          <EventList events={this.state.eventList}/>
       </div>
     );
   }
