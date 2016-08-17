@@ -3,7 +3,9 @@ import EventEntry from './EventEntry';
 
 const EventList = ({ events }) => (
   <div className="container">
-    {events.map((event, index) => <EventEntry key={index} event={event} /> )}
+    {events.map((event, index) => {
+      return <EventEntry key={index} index={index} event={event} />;
+    })}
   </div>
 );
 
