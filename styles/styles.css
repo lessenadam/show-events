@@ -26,3 +26,7 @@ html, body
   font-weight: bold;
   border: 2px solid gray;
 }
+
+.container {
+  margin-top: 100px;
+}
